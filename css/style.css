@@ -1,0 +1,173 @@
+h1, h2, h3, h4, h5, h6, ul, li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p, a, input, label, textarea, span{
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: var(--warning);
+}
+a:active {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+    color: var(--warning);
+}
+.text-gray {
+    color: #454647 !important;
+}
+li{
+    list-style: none;
+}
+
+/********** intro section **********/
+#intro .jumbotron{
+    height: 100vh;
+    background-image: url(/assets/img/header-bg2.jpg);
+}
+/* 將container內容垂直置中 */
+#intro .container{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #FFF;
+}
+#intro .btn{
+    background: var(--warning);
+    border-radius: 20px;
+    color: var(--dark);
+    padding: 9px 26px;
+}
+#intro .btn:hover{
+    background: var(--yellow);
+    color: #FFF;
+}
+#intro h1{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+#intro .lead{
+    font-size: 60px;
+    font-weight: 650;
+    line-height: 1.5;   
+}
+
+/********** header **********/
+header nav img{
+    width: 140px;
+}
+header nav ul li{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* .nav 負責定義成垂直導航的樣式 */
+/* .navbar-brand, 負責左邊logo區的預設樣式 */
+/* navbar-nav：負責豎版導航的填充、實現橫版導航。 */
+/* 以上這些類負責的樣式是除了顏色之外的樣式，與顏色相關的一切都由.navbar-default負責 */
+
+/* 修改active的顏色 */
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--warning);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--warning);
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #FFF;
+}
+
+/********** skills **********/
+@media screen and (min-width: 768px) {
+    #skills .content-size{
+        height: 100vh;
+    }
+}
+
+
+/********** portfolio section **********/
+#portfolio .card{
+    box-shadow: 0px 3px 5px var(--secondary);
+}
+#portfolio a .card{
+    border: none;
+    box-shadow: 0px 3px 5px var(--secondary);
+}
+#portfolio .icon-show{
+    display: none;
+}
+#portfolio .card-img-overlay:hover{
+    background-color: rgba(254, 209, 54, 0.7);
+    padding-top: 30%;
+}
+#portfolio .card-img-overlay:hover .icon-show{
+    display: inline-block;
+}
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    z-index: 999;
+}
+/* Modal */
+#PortfolioModal1 img{
+    /* border: 3px solid var(--yellow); */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px var(--secondary);
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 70vw;
+      margin: 1.75rem auto;
+    }
+  }
+
+/********** about section **********/
+#about .pic-wrap{
+    width: 200px;
+    height: 200px;
+    border: 10px solid #999;
+/* 2019-05-28 DSC01238.jpg*/
+    background-image: url(/assets/img/about/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 50px auto 0 auto;
+
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 650;
+    line-height: 1.5;   
+}
+.content-title{
+    font-size: 30px;
+    font-weight: 650;
+    line-height: 1.5;   
+}
+@media screen and (min-width: 768px) {
+    #about .content-size{
+        height: 100vh;
+    }
+}
+
+/********** footer **********/
+.btn-social{
+    border-radius: 50%;
+}
