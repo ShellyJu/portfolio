@@ -1,9 +1,25 @@
+// Smooth scrolling using jQuery easing
+$('a.page-scroll[href*="#"]:not([href="#"])').on('click', function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        this.siblings().removeClass("active");
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: (target.offset().top + 100)
+            }, 1200, "easeInOutExpo");
+            return false;
+        }
+    }
+});
+
 // https://dometi.com.tw/blog/one-page-scroll/
 
 var sectionIds = {};
+
 $(".section").each(function () {
     var $this = $(this);
-    sectionIds[$this.attr("id")] = $this.first().offset().top;
+    sectionIds[$this.attr("id")] = $this.offset().top;
 });
 //    設定sectionIds為空的。
 //    分別抓取class為section的元素。
@@ -15,8 +31,8 @@ $(".section").each(function () {
 $(window).scroll(function (event) {
     var scrolled = $(this).scrollTop();
     for (key in sectionIds) {
-        if (scrolled >= sectionIds[key]) {
-            $("#navbarSupportedContent li").removeClass("active");
+        if (scrolled >= sectionIds[key] - 200) {
+            $("#navbarSupportedContent li").siblings().removeClass("active");
             var c = $("[data-id=" + key + "]");
             c.addClass("active");
         }
@@ -28,13 +44,10 @@ $(window).scroll(function (event) {
 //    key則是sectionIds的id。
 //    以上語法就可以達成滾動到此會亮燈的效果。 
 
-$("#navbarSupportedContent li").click(function() {
-    $(this).addClass("active");
+$("#navbarSupportedContent li").click(function () {
     $(this).siblings().removeClass("active");
-    var name = $(this).attr("data-id");
-    var id = "#" + name;
-    var top = $(id).first.offset().top;
-    $('html, body').animate({ scrollTop: top }, 300);
+    $(this).addClass("active");
+
 });
 // 當 #navbarSupportedContent li（選擇器）被點擊的時候
 // 把被點擊的元素+上class
@@ -46,9 +59,11 @@ $("#navbarSupportedContent").click(function () {
 });
 
 //動畫方式回到上層
-$(".navbar-brand").click(function(){
-    $('html, body').animate({scrollTop:0},300);
+$(".navbar-brand").click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 300);
 });
+
+
 
 // $(function gotop(){
 //     $("#gotop").click(function(){
@@ -64,6 +79,8 @@ $(".navbar-brand").click(function(){
 //         }
 //     });
 // });
+
+
 // AOS
 AOS.init({
     // Global settings:
@@ -75,7 +92,7 @@ AOS.init({
     disableMutationObserver: false, // disables automatic mutations' detections (advanced)
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
+
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
@@ -84,4 +101,4 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  });
+});

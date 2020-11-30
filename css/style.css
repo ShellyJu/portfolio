@@ -31,7 +31,7 @@ li{
 /********** intro section **********/
 #intro .jumbotron{
     height: 100vh;
-    background-image: url("https://shellyju.github.io/portfolio/assets/img/header-bg2.jpg");
+    background-image: url("../assets/img/header-bg2.jpg");
 }
 /* 將container內容垂直置中 */
 #intro .container{
@@ -91,11 +91,11 @@ header nav ul li{
 }
 
 /********** skills **********/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     #skills .content-size{
         height: 100vh;
     }
-}
+} */
 
 
 /********** portfolio section **********/
@@ -144,7 +144,7 @@ header nav ul li{
     height: 200px;
     border: 10px solid #999;
 /* 2019-05-28 DSC01238.jpg*/
-    background-image: url("https://shellyju.github.io/portfolio/assets/img/about/1.jpg");
+    background-image: url("../assets/img/about/1.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 50%;
