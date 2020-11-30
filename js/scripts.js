@@ -6,7 +6,7 @@ $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function () {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             $('html, body').animate({
-                scrollTop: (target.offset().top + 100)
+                scrollTop: (target.offset().top)
             }, 1200, "easeInOutExpo");
             return false;
         }
@@ -31,7 +31,7 @@ $(".section").each(function () {
 $(window).scroll(function (event) {
     var scrolled = $(this).scrollTop();
     for (key in sectionIds) {
-        if (scrolled >= sectionIds[key] - 200) {
+        if (scrolled >= sectionIds[key]) {
             $("#navbarSupportedContent li").siblings().removeClass("active");
             var c = $("[data-id=" + key + "]");
             c.addClass("active");
