@@ -51,7 +51,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-inverse">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/img/nav-logo.png" alt="">
                 </a>
                 <button class="navbar-toggler bg-warning align-middle pb-2" type="button" data-toggle="collapse"
@@ -80,7 +80,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h1>Welcome to my portfolio!</h1>
-                        <p class="lead">IT'S NICE TO MEET YOU</p>
+                        <!-- <p class="lead">IT'S NICE TO MEET YOU</p> -->
                         <a class="btn" href="#skills">tell me more</a>
                     </div>
                 </div>
@@ -97,7 +97,18 @@
                     <h5 class="text-secondary mb-5">What I can offer</h5>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4 mt-5">
+                    <div class="col-md-3 mt-5">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                            <!-- https://fontawesome.com/icons/palette/ -->
+                            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <p class="my-3 content-title">Artificial intelligence</p>
+                        <h5 class="text-secondary">
+                            Data Collection/ Data Processing/ Machine Learning/ Deep Learning
+                        </h5>
+                    </div>
+                    <div class="col-md-3 mt-5">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-warning"></i>
                             <!-- https://fontawesome.com/icons/palette/ -->
@@ -108,7 +119,7 @@
                             Game Art/ Banner/ Flyer/ Packaging/ Labeling/ Menu/ Icon/ Catalog/ Layout Design
                         </h5>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-md-3 mt-5">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-warning"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -116,13 +127,13 @@
                         <p class="my-3 content-title">Responsive Design</p>
                         <h5 class="text-secondary">UI/UX/ Responsive Website/ Wordpress website</h5>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-md-3 mt-5">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-warning"></i>
                             <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
                         </span>
                         <p class="my-3 content-title">Tools</h4>
-                        <h5 class="text-secondary">Html/ CSS/ Javascript/ PHP/ JQuery/ JQuery Mobile/ RESTful API/
+                        <h5 class="text-secondary">Python/ Flask/ Html/ CSS/ Javascript/ PHP/ JQuery/ JQuery Mobile/ RESTful API/
                             MySQL/ Bootstrap/ React Native/ PhotoShop/ Illustrator/ Adobe XD/ Dreamwaver/ InDesign/
                             painter/ PowerDirector 365/ Microsoft Office Series</h5>
                     </div>
@@ -136,9 +147,26 @@
         <div class="container" data-aos="fade-up">
             <div class="text-center">
                 <p class="section-title text-uppercase mt-3">Portfolio</p>
-                <h5 class="text-secondary mb-5">UI/ RWD website/ RESTful API/Graphic Design/ React Native</h5>
+                <h5 class="text-secondary mb-5">UI/ RWD website/ Python/ Machine Learning/ Deep Learning/ RESTful API/Graphic Design/ React Native</h5>
             </div>
             <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <a href="#PortfolioModal_Ai" data-toggle="modal" data-target="#PortfolioModal_Ai">
+                            <div class="card bg-dark text-white">
+                                <img src="assets/img/portfolio/Ai_thumbnail.jpg"
+                                    class="card-img img-fluid image-move-higher" alt="...">
+                                <div class="card-img-overlay text-center">
+                                    <span class="fas fa-plus fa-3x icon-show"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <p class="content-title">Anti-CON User Interface</p>
+                            <h5 class="text-gray mb-5">Use Bert+SVM to train data, and use Flask+Bootstrap to dynamically generate user operation web pages. This enables instant detection of fraudulent messages.</h5>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card mb-4">
                         <a href="#PortfolioModal1" data-toggle="modal" data-target="#PortfolioModal1">
@@ -152,7 +180,23 @@
                         </a>
                         <div class="card-body text-center">
                             <p class="content-title">UI design</p>
-                            <h5 class="text-gray mb-5">Adobe XD</h5>
+                            <h5 class="text-gray mb-5">Independent Adobe XD exercises to replicate the UI of the Airbnb app meticulously, focusing on understanding and mastering user interaction patterns.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <a href="#PortfolioModal5" data-toggle="modal">
+                            <div class="card bg-dark text-white">
+                                <img src="assets/img/portfolio/05-Windztech-thumbnail.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-center">
+                                    <span class="fas fa-plus fa-3x icon-show"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <p class="content-title">Business Site</p>
+                            <h5 class="text-gray mb-5">This is a piecework：Windztech Co., Ltd. Established the client company's website utilizing WordPress and hosted it on InMotion Hosting.</h5>
                         </div>
                     </div>
                 </div>
@@ -169,7 +213,7 @@
                         </a>
                         <div class="card-body text-center">
                             <p class="content-title">Restaurant CIS</p>
-                            <h5 class="text-gray mb-5">Signboard/ Namecard...etc</h5>
+                            <h5 class="text-gray mb-5">This is a piecework：Create distinctive restaurant branding materials, including business cards, signboards, aprons, and chopstick sets. The displayed signboard is an authentic representation. </h5>
                         </div>
                     </div>
                 </div>
@@ -185,7 +229,7 @@
                         </a>
                         <div class="card-body text-center">
                             <p class="content-title">Member System</p>
-                            <h5 class="text-gray mb-5">RESTful API</h5>
+                            <h5 class="text-gray mb-5">A streamlined PHP mobile webpage featuring essential functionalities such as user registration, login, data addition, retrieval, updating, and deletion.</h5>
                         </div>
                     </div>
                 </div>
@@ -201,26 +245,11 @@
                         </a>
                         <div class="card-body text-center">
                             <p class="content-title">Mask Map</p>
-                            <h5 class="text-gray mb-5">OpenData + Map</h5>
+                            <h5 class="text-gray mb-5">In response to the high demand for mask purchases during the epidemic, a mask sales map was created using open data and Ajax technology.</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <a href="#PortfolioModal5" data-toggle="modal">
-                            <div class="card bg-dark text-white">
-                                <img src="assets/img/portfolio/05-PuFeng-thumbnail.jpg" class="card-img" alt="...">
-                                <div class="card-img-overlay text-center">
-                                    <span class="fas fa-plus fa-3x icon-show"></span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-body text-center">
-                            <p class="content-title">Business site</p>
-                            <h5 class="text-gray mb-5">Pu Feng biotech Co., Ltd.</h5>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="card mb-4">
                         <a href="#PortfolioModal6" data-toggle="modal">
@@ -233,7 +262,7 @@
                         </a>
                         <div class="card-body text-center">
                             <p class="content-title">Catalog Design</p>
-                            <h5 class="text-gray mb-5">Chun Yuan Steel Industry</h5>
+                            <h5 class="text-gray mb-5">This is a piecework：Utilize Adobe Illustrator to aid Chun Yuan Steel Industry in crafting the exhibition catalog as per the specific requirements.</h5>
                         </div>
                     </div>
                 </div>
@@ -281,6 +310,9 @@
                     </a>
                     <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/you-lian-zhu">
                         <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/ShellyJu">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
@@ -340,6 +372,46 @@
             </div>
         </div>
     </div>
+        <!-- Modal Ai -->
+        <div>
+            <!-- 此div不可移除，移除後第二個(以上)的Modal無法正常顯示 -->
+            <div class="modal fade text-center" id="PortfolioModal_Ai" role="dialog" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-btn" data-dismiss="modal"><i class="fas fa-times mr-1 fa-3x"></i></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project Details Go Here-->
+                                        <h2 class="text-uppercase">Adobe XD UI design</h2>
+                                        <p class="item-intro text-secondary">Hotel booking app user interface.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Ai.gif"
+                                            alt="" />
+                                        <p class="mt-4">Click the Demo button below to view all pages.</p>
+                                        <ul class="list-inline">
+                                            <li>DATE: September 2023</li>
+                                            <li>TOOLS: Bert/ Hugging Face/ Flask/ Bootstrap</li>
+                                            <li>CATEGORY: Deep Learning</li>
+                                        </ul>
+                                        <a href="https://github.com/robYP/anti_con.git">
+                                            <button class="btn btn-primary mr-2" type="button">
+                                                <!-- <i class="fas fa-times mr-1"></i> -->
+                                                Demo
+                                            </button>
+                                        </a>
+                                        <button class="btn btn-warning" data-dismiss="modal" type="button">
+                                            <i class="fas fa-times mr-1"></i>
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Modal 2 -->
     <div>
         <!-- 此div不可移除，移除後第二個(以上)的Modal無法正常顯示 -->
@@ -361,6 +433,7 @@
                                         <li>DATE: January 2013</li>
                                         <li>TOOLS: Aodbe Photoshop/ Aodbe Illustrator</li>
                                         <li>CATEGORY: Gaphic Design</li>
+                                        <li>This Japanese yakiniku restaurant is situated in the United States.</li>
                                     </ul>
                                     <button class="btn btn-warning" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
@@ -473,16 +546,16 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Business Site</h2>
                                     <p class="item-intro text-secondary">PU FENG BIOTECH CO.,LTD.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-PuFeng.jpg"
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-Windztech.jpg"
                                         alt="" />
-                                    <p>Business Site of Pu Feng Biotech Co.,Ltd. WIP. </p>
+                                    <p>Business Site of Windztech Co.,Ltd. WIP. </p>
                                     <ul class="list-inline">
-                                        <li>DATE: December 2020</li>
-                                        <li>TOOLS: Adobe XD, Html, CSS, Javascript, bootstrap</li>
+                                        <li>DATE: August 2021</li>
+                                        <li>TOOLS: Wordpress, Html, CSS, Javascript</li>
                                         <li>CATEGORY: RWD website</li>
                                     </ul>
                                     <a
-                                        href="https://drive.google.com/file/d/10fyFURBIdZfc1SdmN1iSoB6DpGhqM7uB/view?usp=sharing">
+                                        href="https://windztech.com/">
                                         <button class="btn btn-primary mr-2" type="button">
                                             <!-- <i class="fas fa-times mr-1"></i> -->
                                             Demo

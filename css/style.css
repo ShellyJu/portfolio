@@ -42,7 +42,7 @@ li{
 /********** intro section **********/
 #intro .jumbotron{
     height: 100vh;
-    background-image: url("../assets/img/header-bg2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../assets/img/header-bg2.jpg");
 }
 /* 將container內容垂直置中 */
 #intro .container{
